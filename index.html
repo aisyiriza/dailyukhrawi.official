@@ -242,6 +242,107 @@ button {
 footer {
   margin-top: 0;
  }
+  /* ===== KARTU PAKET ===== */
+
+.package-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+}
+
+.package-card {
+    width: 100%;
+    min-height: 115px;
+    padding: 22px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+
+    border: 2px solid #888;
+    border-radius: 22px;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.package-card:hover {
+    border-color: #087ff5;
+}
+
+/* RADIO */
+.package-card input[type="radio"] {
+    width: 32px;
+    height: 32px;
+    margin: 0 20px 0 0;
+
+    flex-shrink: 0;
+    accent-color: #087ff5;
+}
+
+/* BAGIAN TENGAH */
+.package-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.package-name {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 5px;
+}
+
+.package-desc {
+    font-size: 16px;
+    color: #888;
+    line-height: 1.4;
+}
+
+/* HARGA */
+.package-price {
+    margin-left: 15px;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    color: #087ff5;
+    white-space: nowrap;
+}
+
+/* HP */
+@media (max-width: 600px) {
+
+    .package-list {
+        gap: 18px;
+    }
+
+    .package-card {
+        min-height: 115px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .package-card input[type="radio"] {
+        width: 31px;
+        height: 31px;
+        margin-right: 18px;
+    }
+
+    .package-name {
+        font-size: 18px;
+    }
+
+    .package-desc {
+        font-size: 15px;
+    }
+
+    .package-price {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+}
 </style> 
 
     <title>Daily Ukhrawi. Official</title>
