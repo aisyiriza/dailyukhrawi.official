@@ -324,6 +324,82 @@ button {
         padding: 11px 12px;
     }
 }
+  /* ===== KOTAK PILIHAN PAKET ===== */
+
+.package-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 22px 0;
+}
+
+.package-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    background: #fff;
+    border: 2px solid #e1d8d0;
+    border-radius: 16px;
+
+    padding: 15px 16px;
+
+    box-shadow: 0 3px 10px rgba(80, 55, 40, 0.05);
+}
+
+.package-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0;
+}
+
+.package-info strong {
+    display: block !important;
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+
+    color: #573b2c !important;
+    font-size: 16px;
+}
+
+.package-info span {
+    color: #7a7069;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.package-price {
+    flex-shrink: 0;
+    color: #168de2;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* HP */
+@media (max-width: 480px) {
+
+    .package-item {
+        padding: 14px;
+        border-radius: 15px;
+    }
+
+    .package-info strong {
+        font-size: 15px !important;
+    }
+
+    .package-info span {
+        font-size: 13px;
+    }
+
+    .package-price {
+        font-size: 15px;
+    }
+}
 </style> 
 
     <title>Daily Ukhrawi. Official</title>
@@ -362,10 +438,37 @@ belajar ilmu agama dan keterampilan dasar secara bertahap, praktis, dan menyenan
     <h3>Tahsin</h3>
 
     <p>Program memperbaiki bacaan Al-Qur'an agar lebih baik dan sesuai kaidah yang dibantu oleh pengajar dan materi ilmu tajwid.</p>
-<strong>Rp149.000 / 4 pertemuan 1/40 menit (private)</strong> 
-<strong>Rp239.000 / 8 pertemuan 1/40 menit (private)</strong>
-<strong>Rp119.000 / 4 pertemuan 1/60 menit (1 kelompok 5 org)</strong>
-    <br><br>
+<div class="package-list">
+
+    <div class="package-item">
+        <div class="package-info">
+            <strong>Private</strong>
+            <span>4× pertemuan · 40 menit</span>
+        </div>
+        <div class="package-price">
+            Rp149.000
+        </div>
+    </div>
+
+    <div class="package-item">
+        <div class="package-info">
+            <strong>Private</strong>
+            <span>8× pertemuan · 40 menit</span>
+        </div>
+        <div class="package-price">
+            Rp239.000
+        </div>
+    </div>
+
+    <div class="package-item">
+        <div class="package-info">
+            <strong>Kelompok 5 orang</strong>
+            <span>4× pertemuan · 60 menit</span>
+        </div>
+        <div class="package-price">
+            Rp119.000
+        </div>
+    </div>
 <a href= "https://forms.gle/orDz4gSda81uFcn4A" target="_blank">
     <button>Daftar Sekarang</button>
 </a>
