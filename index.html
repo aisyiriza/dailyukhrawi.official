@@ -412,6 +412,315 @@ button {
   border-radius: 16px;
   margin-bottom: 9px;
 }
+ /* ================================
+   HUBUNGI KAMI
+================================ */
+
+.contact-section {
+    padding: 80px 20px;
+    background: linear-gradient(
+        180deg,
+        #fffaf4 0%,
+        #f8eee4 100%
+    );
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+    padding: 55px 45px;
+
+    background: rgba(255,255,255,0.9);
+
+    border: 1px solid rgba(111, 70, 58, 0.1);
+
+    border-radius: 28px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 60px rgba(82, 50, 40, 0.12);
+}
+
+
+/* Badge */
+
+.contact-badge {
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    border-radius: 50px;
+
+    background: #f1dfcf;
+
+    color: #9b5b35;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Judul */
+
+.contact-container h2 {
+    margin: 0 0 15px;
+
+    font-size: 42px;
+
+    color: #5b382f;
+
+    font-weight: 700;
+}
+
+
+/* Deskripsi */
+
+.contact-subtitle {
+    max-width: 650px;
+
+    margin: 0 auto 35px;
+
+    color: #76625b;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* ================================
+   BUTTON
+================================ */
+
+.contact-buttons {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+
+    max-width: 700px;
+
+    margin: auto;
+}
+
+
+.contact-btn {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 20px;
+
+    border-radius: 18px;
+
+    text-decoration: none;
+
+    color: white;
+
+    text-align: left;
+
+    transition: 0.3s ease;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+
+.contact-btn:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.16);
+}
+
+
+/* WhatsApp */
+
+.whatsapp {
+    background: linear-gradient(
+        135deg,
+        #20b957,
+        #25d366
+    );
+}
+
+
+/* Instagram */
+
+.instagram {
+    background: linear-gradient(
+        135deg,
+        #833ab4,
+        #fd1d1d,
+        #fcb045
+    );
+}
+
+
+/* Icon */
+
+.btn-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: rgba(255,255,255,0.2);
+
+    border-radius: 14px;
+
+    font-size: 25px;
+}
+
+
+/* Text */
+
+.contact-btn strong {
+    display: block;
+
+    font-size: 17px;
+
+    margin-bottom: 3px;
+}
+
+
+.contact-btn small {
+    display: block;
+
+    font-size: 12px;
+
+    opacity: 0.85;
+}
+
+
+/* Arrow */
+
+.arrow {
+    margin-left: auto;
+
+    font-size: 22px;
+
+    transition: 0.3s;
+}
+
+
+.contact-btn:hover .arrow {
+    transform: translateX(5px);
+}
+
+
+/* Note */
+
+.contact-note {
+    margin-top: 28px;
+
+    color: #876e65;
+
+    font-size: 13px;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+.footer {
+    background: #51352f;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 45px 20px;
+}
+
+
+.footer-brand {
+    font-size: 25px;
+
+    font-weight: 700;
+
+    margin-bottom: 8px;
+}
+
+
+.footer p {
+    margin: 0;
+
+    color: rgba(255,255,255,0.72);
+
+    font-size: 14px;
+}
+
+
+.footer-line {
+    width: 60px;
+
+    height: 2px;
+
+    background: #c98754;
+
+    margin: 25px auto;
+}
+
+
+.footer span {
+    color: rgba(255,255,255,0.5);
+
+    font-size: 12px;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 650px) {
+
+    .contact-section {
+        padding: 50px 15px;
+    }
+
+    .contact-container {
+        padding: 40px 20px;
+
+        border-radius: 22px;
+    }
+
+    .contact-container h2 {
+        font-size: 32px;
+    }
+
+    .contact-subtitle {
+        font-size: 14px;
+    }
+
+    .contact-buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-btn {
+        padding: 17px;
+    }
+
+    .footer {
+        padding: 35px 15px;
+    }
+  }u
 </style> 
 
     <title>Daily Ukhrawi. Official</title>
