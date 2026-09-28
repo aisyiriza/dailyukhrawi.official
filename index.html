@@ -721,25 +721,631 @@ button {
         padding: 35px 15px;
     }
   }u
+ /* =================================
+   RESET
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    background: #fffaf5;
+    color: #49332d;
+}
+
+
+/* =================================
+   HERO
+================================= */
+
+.hero {
+    position: relative;
+
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 20px;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(191, 125, 76, 0.16),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(120, 76, 57, 0.12),
+            transparent 30%
+        ),
+        #fff7ed;
+}
+
+
+/* dekorasi */
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    border-radius: 50%;
+
+    background: rgba(185, 117, 70, 0.08);
+
+    top: -150px;
+    right: -100px;
+}
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    border-radius: 50%;
+
+    background: rgba(91, 56, 47, 0.05);
+
+    bottom: -120px;
+    left: -80px;
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 850px;
+
+    padding: 70px 40px;
+
+    text-align: center;
+
+    background: rgba(255,255,255,0.72);
+
+    border: 1px solid rgba(112, 72, 55, 0.1);
+
+    border-radius: 32px;
+
+    box-shadow:
+        0 25px 70px rgba(83, 51, 40, 0.10);
+
+    backdrop-filter: blur(8px);
+}
+
+
+/* badge */
+
+.hero-badge {
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    margin-bottom: 20px;
+
+    border-radius: 50px;
+
+    background: #f1dfcf;
+
+    color: #9a5b37;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* heading */
+
+.hero h1 {
+    margin: 0;
+
+    font-size: clamp(38px, 6vw, 64px);
+
+    line-height: 1.12;
+
+    font-weight: 750;
+
+    color: #58372f;
+}
+
+.hero h1 span {
+    color: #ad693c;
+}
+
+
+/* description */
+
+.hero p {
+    max-width: 650px;
+
+    margin: 25px auto 30px;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #76625b;
+}
+
+
+/* buttons */
+
+.hero-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+}
+
+
+.btn-primary,
+.btn-secondary {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    min-width: 190px;
+
+    padding: 16px 25px;
+
+    border-radius: 14px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+
+.btn-primary {
+    background: linear-gradient(
+        135deg,
+        #a85f32,
+        #c47a45
+    );
+
+    color: white;
+
+    box-shadow:
+        0 12px 25px rgba(168, 95, 50, 0.25);
+}
+
+
+.btn-primary:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 17px 35px rgba(168, 95, 50, 0.32);
+}
+
+
+.btn-primary span {
+    font-size: 20px;
+}
+
+
+.btn-secondary {
+    color: #734a3b;
+
+    background: white;
+
+    border: 1px solid #e4d3c6;
+}
+
+
+.btn-secondary:hover {
+    background: #f8eee6;
+
+    transform: translateY(-3px);
+}
+
+
+/* info */
+
+.hero-info {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    margin-top: 35px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(100,70,55,0.1);
+
+    color: #806b63;
+
+    font-size: 13px;
+}
+
+
+.hero-info strong {
+    color: #ad693c;
+
+    margin-right: 5px;
+}
+
+
+/* =================================
+   ABOUT
+================================= */
+
+.about {
+    padding: 100px 20px;
+
+    background: #fffaf5;
+}
+
+
+.about-container {
+    max-width: 1050px;
+
+    margin: auto;
+}
+
+
+.about-label {
+    color: #ad693c;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+
+.about h2 {
+    margin: 0;
+
+    font-size: clamp(34px, 5vw, 50px);
+
+    color: #58372f;
+
+    line-height: 1.2;
+}
+
+
+.about h2 span {
+    color: #ad693c;
+}
+
+
+.about-intro {
+    max-width: 650px;
+
+    margin: 18px 0 50px;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #806c64;
+}
+
+
+.about-grid {
+    display: grid;
+
+    grid-template-columns: 1.2fr 0.8fr;
+
+    gap: 35px;
+
+    align-items: stretch;
+}
+
+
+.about-text {
+    padding: 35px;
+
+    border-radius: 22px;
+
+    background: white;
+
+    border: 1px solid #eee0d6;
+
+    box-shadow:
+        0 15px 40px rgba(80,50,40,0.06);
+}
+
+
+.about-text p {
+    margin: 0 0 20px;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    color: #5e4c46;
+}
+
+
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* cards */
+
+.about-cards {
+    display: grid;
+
+    gap: 18px;
+}
+
+
+.mini-card {
+    padding: 28px;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f7e9dc,
+            #fff8f0
+        );
+
+    border: 1px solid #ead8c9;
+
+    transition: 0.3s ease;
+}
+
+
+.mini-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(80,50,40,0.08);
+}
+
+
+.mini-icon {
+    font-size: 30px;
+
+    margin-bottom: 12px;
+}
+
+
+.mini-card h3 {
+    margin: 0 0 8px;
+
+    color: #684338;
+
+    font-size: 20px;
+}
+
+
+.mini-card p {
+    margin: 0;
+
+    color: #806b63;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 700px) {
+
+    .hero {
+        min-height: auto;
+
+        padding: 35px 15px 60px;
+    }
+
+    .hero-content {
+        padding: 45px 22px;
+
+        border-radius: 24px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+    }
+
+    .hero-info {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .about {
+        padding: 65px 20px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-text {
+        padding: 25px;
+    }
+ }
 </style> 
 
-    <title>Daily Ukhrawi. Official</title>
-</head>
+    <!-- =========================
+     HERO SECTION
+========================= -->
 
-<body>
-<div class="hero">
-    <h1>Daily Ukhrawi</h1>
-    <p>Bimbel Online untuk Belajar, Berlatih, dan Bertumbuh Bersama</p>
-    <a href="https://forms.gle/orDz4gSda81uFcn4A" target="_blank">
-        <button>Daftar Sekarang</button>
-    </a>
-</div>
-    <h2>Tentang Daily Ukhrawi</h2>
+<section class="hero">
 
-<p>
-Daily Ukhrawi adalah bimbel online yang hadir untuk membantu sahabat bimbel
-belajar ilmu agama dan keterampilan dasar secara bertahap, praktis, dan menyenangkan.
-</p>
+    <div class="hero-content">
+
+        <div class="hero-badge">
+            ✦ DAILY UKHRAWI
+        </div>
+
+        <h1>
+            Belajar Hari Ini,<br>
+            <span>Bertumbuh Setiap Hari.</span>
+        </h1>
+
+        <p>
+            Bimbel online untuk belajar, berlatih,
+            dan bertumbuh bersama dengan cara yang
+            praktis, menyenangkan, dan bermakna.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#program" class="btn-primary">
+                Daftar Sekarang
+                <span>→</span>
+            </a>
+
+            <a href="#tentang" class="btn-secondary">
+                Kenali Kami
+            </a>
+
+        </div>
+
+        <div class="hero-info">
+            <div>
+                <strong>✓</strong>
+                Belajar Online
+            </div>
+
+            <div>
+                <strong>✓</strong>
+                Materi Bertahap
+            </div>
+
+            <div>
+                <strong>✓</strong>
+                Pendampingan
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     TENTANG KAMI
+========================= -->
+
+<section class="about" id="tentang">
+
+    <div class="about-container">
+
+        <div class="about-label">
+            TENTANG KAMI
+        </div>
+
+        <h2>
+            Mengenal <span>Daily Ukhrawi</span>
+        </h2>
+
+        <p class="about-intro">
+            Ruang belajar online untuk membantu
+            setiap peserta berkembang secara bertahap
+            dan percaya diri.
+        </p>
+
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <p>
+                    Daily Ukhrawi adalah bimbel online yang hadir
+                    untuk membantu sahabat bimbel belajar ilmu
+                    agama dan keterampilan dasar secara bertahap,
+                    praktis, dan menyenangkan.
+                </p>
+
+                <p>
+                    Kami percaya bahwa proses belajar bukan hanya
+                    tentang mendapatkan pengetahuan, tetapi juga
+                    tentang membangun kebiasaan baik dan terus
+                    bertumbuh setiap hari.
+                </p>
+
+            </div>
+
+            <div class="about-cards">
+
+                <div class="mini-card">
+                    <div class="mini-icon">📚</div>
+                    <h3>Belajar</h3>
+                    <p>
+                        Materi disusun secara bertahap
+                        agar mudah dipahami.
+                    </p>
+                </div>
+
+                <div class="mini-card">
+                    <div class="mini-icon">🌱</div>
+                    <h3>Bertumbuh</h3>
+                    <p>
+                        Mendorong proses belajar yang
+                        konsisten dan berkelanjutan.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
     
 <div class="program-section">
